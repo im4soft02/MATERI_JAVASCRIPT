@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.java {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dlm-java {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50%;
+  /* background-color: aqua; */
+}
+
+.soal1 {
+  color: rgb(101, 255, 222);
+}
+
+.soal2 {
+  color: rgb(255, 0, 221);
+  text-align: center;
+}
