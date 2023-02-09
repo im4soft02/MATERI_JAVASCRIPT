@@ -1,4 +1,3 @@
-// objek siswa
 
 let siswa = {
     nama: 'haekal',

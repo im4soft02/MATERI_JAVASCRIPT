@@ -105,16 +105,18 @@
 //          -= Arrow function  =-
 
 // Arrow function BIASA
-// const ContohArrowBIASA = (a, b) => {
-//   return a + b;
-// };
-// // di bawah ini buat munculin hasil dari rumus di atas
-// document.write(ContohArrowBIASA(10, 20));
+const ContohArrowBIASA = (a, b) => {
+  return a + b;
+};
+// di bawah ini buat munculin hasil dari rumus di atas
+document.write(ContohArrowBIASA(10, 20));
 
-// //  Arrow function SINGKAT (biasa di guanakn klngoding 1 baris)
-// const ContohArrowSINGKAT = (a, b) => a + b;
-// // di bawah ini buat munculin hasil dari rumus di atas
-// document.write(ContohArrowSINGKAT(10, 20));
+//  Arrow function SINGKAT (biasa di guanakn klngoding 1 baris)
+const ContohArrowSINGKAT = (a, b) => a + b;
+// di bawah ini buat munculin hasil dari rumus di atas
+document.write(ContohArrowSINGKAT(10, 20));
+
+
 
 //
 //

@@ -61,14 +61,14 @@
 // //
 // // MODUS
 
-// let dataModus = [5, 9, 6, 7, 9, 8, 10, 7, 8, 9, 9];
+let dataModus = [5, 9, 6, 7, 9, 8, 10, 7, 8, 9, 9];
 
-// let sortir2 = dataModus.sort(function modus(a, b) {
-//   return a - b;
-// });
-// document.write(
-//   `<br><br>MODUS = angka yang paling banyak muncul = ${sortir2}<br>`
-// );
+let sortir2 = dataModus.sort(function modus(a, b) {
+  return a - b;
+});
+document.write(
+  `<br><br>MODUS = angka yang paling banyak muncul = ${sortir2}<br>`
+);
 // let modus = sortir2.splice(2, 6);
 // document.write(`Modus dari data di atas adalah = ${modus}`);
 
@@ -108,5 +108,5 @@ function PerhitunganSB(varians) {
 const SimpanganBaku1 = PerhitunganSB(varians).toFixed(2);
 
 document.write(
-  `nilai rata rata = ${HasilRataRata} <br> nilai varian = ${varian} <br> Simpangan Baku = ${SimpanganBaku1}`
+  `<br> nilai rata rata = ${HasilRataRata} <br> nilai varian = ${varian} <br> Simpangan Baku = ${SimpanganBaku1}`
 );
