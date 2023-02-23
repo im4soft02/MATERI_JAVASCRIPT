@@ -108,6 +108,19 @@ for (counter = 0; counter < 30; counter += 2) {
 //   console.log([item]);
 // }
 
+
+//
+//----= ARRAY
+//
+const buah = ['pisang', 'mangga', 'apel'];
+
+for (const elemen of buah) {
+  elemen += ' enak sekali.';
+  console.log(elemen);
+}
+
+
+
 // //
 // //----= OBJECT
 // //

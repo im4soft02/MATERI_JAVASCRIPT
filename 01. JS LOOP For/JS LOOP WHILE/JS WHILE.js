@@ -176,7 +176,7 @@
 // Kita juga bisa menggunakan nama lain.
 
 // Misalnya seperti di bawah ini =
-
+//
 // let MencariNilaiGanjil = 1;
 
 // while (MencariNilaiGanjil <= 30) {
@@ -244,6 +244,38 @@
 // ______|\_____________|\______\\
 //                              \\
 //    ->-->  CONTOH 4 - <--<-   \\
+//______________________________\\
+
+//---== {   PERHITUNGAN BUNGA BANK menggunakan ( WHILE )
+
+// -------=[ SEDERHANA
+// 
+let saldo = 300000; // Saldo / uang
+let diskon = 0.2; //bunga sebesar 2,5%
+let noBulan = 1; //bulan
+
+while (noBulan <= 12) {
+  document.write(`Bulan ke ${noBulan} = Rp. ${(saldo += saldo * 0.025)}<br>`);
+  noBulan++;
+  saldo++; // <- baris ini adalah increment / decrement, JANGAN LUPA DI KASI SEPERTI INI AGAR TIDAK MASUK KE ( INFINITY LOOPING )
+}
+
+// -------=[ KOMPLEKS ( RUMIT )
+//
+// function hitung() {
+//   let saldo = parseFloat(document.grup.isaldo.value);
+//   let bunga = parseFloat(document.grup.ibunga.value);
+//   let waktu = parseFloat(document.grup.iwaktu.value);
+//   let hasil = "";
+
+//   for (i = 1; i <= waktu; i++) {
+//     saldo = saldo + (saldo * bunga);
+//   }
+// }
+
+// ______|\_____________|\______\\
+//                              \\
+//    ->-->  CONTOH 5 - <--<-   \\
 //______________________________\\
 
 // let angka = 1;

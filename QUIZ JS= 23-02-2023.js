@@ -66,7 +66,7 @@ console.log(first)
 
 ///--9
 
-let quest = prompt('pilih angka') t
+let quest = prompt('pilih angka') 
 
 switch (quest) {
     case 1:
