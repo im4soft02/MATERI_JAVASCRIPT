@@ -70,8 +70,6 @@ document.write(
 ////
 //
 
-//
-
 //=-
 //=---  1. Map    -=   Method .map ( )  =-
 //=-
@@ -102,10 +100,20 @@ let Kita_punya = [
 // Yang kita butuhkan KITA panggil, contoh nya SAYA INGIN NAMA NYA SAJA
 
 const HasilFilterNama = Kita_punya.map((i) => i.name);
+
 document.write(
   `<br><br>HASIL SELEKSI YANG KITA BUTUHKAN DARI DATA  <span style="color: rgb(24, 219, 206);">Name</span> <span style="color: chartreuse;">Method .map()</span> = <br>` +
     HasilFilterNama
 );
+
+//
+// ----JIKA INGIN MENGAMBIL 2 KEY DALAM 1 OBJECT tapi dalam 1 ARRAY
+const HasilFilterNama1 = Kita_punya.map((santri) => ({
+  nama: santri.name,
+  id: santri.id,
+}));
+
+console.log(HasilFilterNama1);
 
 const HasilFilterID = Kita_punya.map((i) => i.id);
 document.write(
@@ -269,8 +277,7 @@ const true1 = Benar_salah.filter(function (coba) {
   return coba.faction === "true1";
 });
 
-
-console.log(ForceuserTrue);
+console.log(Benar_salah);
 
 //______________________________________________________________________________
 
@@ -347,3 +354,12 @@ console.log(ForceuserTrue);
 // .map((a) => a * 3) // 24,27,27
 // .reduce((acc, cur) => acc + cur); // 78
 // console.log(hasil);
+
+//-------------= spreed operator
+//
+//
+// datasantri = [
+//   ...dataSantri,
+//   { nis: 7, nama: "adhin", umur: 21, divisi: "mobile" },
+
+// ];

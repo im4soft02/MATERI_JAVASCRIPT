@@ -72,12 +72,21 @@
 //           PENGGUNAAN FUNCTION argument
 //
 
-// function penjumlahan(a, b) {
-//   const hasilJ = a + b;
-//   return hasilJ;
-// }
-// let result = penjumlahan(1, 1);
-// console.log(result);
+function penjumlahan(a, b) {
+  const hasilJ = a + b;
+  return hasilJ;
+}
+
+let result = penjumlahan(10, 5);
+console.log(result);
+
+//
+// di bawah ini a dan b nya menggunakan default parameter
+function pengurangan(a = 4, b = 6) {
+  return a - b;
+}
+
+console.log(pengurangan());
 
 // //
 // //
@@ -116,18 +125,16 @@ const ContohArrowSINGKAT = (a, b) => a + b;
 // di bawah ini buat munculin hasil dari rumus di atas
 document.write(ContohArrowSINGKAT(10, 20));
 
-
-
 //
 //
 //          -= TEMPLATE LITERAL =-
 
-// let FunctionBaru = `
-// <br><hr>contoh
-// penggunaan =
-// ${20 + 20}`;
-// // di bawah ini buat munculin hasil dari rumus di atas
-// document.write(FunctionBaru);
+let FunctionBaru = `
+<br><hr>contoh
+penggunaan =
+${20 + 20}`;
+// di bawah ini buat munculin hasil dari rumus di atas
+document.write(FunctionBaru);
 
 // let FbaruT = `
 // <br><hr>contoh
@@ -229,9 +236,9 @@ document.write(ContohArrowSINGKAT(10, 20));
 //
 //   !!---===[[[/ TUGAS FUNCTION \]]]===---!!
 
-
 //
 // Di bawah menggunakan (-==  FUNCTION EXPRESSION  ==-)
+// adalah fungction dalam variabel
 
 const Hitung_PxL = function (panjang, lebar) {
   const HasilPxL = panjang * lebar;
@@ -243,6 +250,7 @@ document.write(
 
 //
 // Di bawah menggunakan (-==  FUNCTION DECLARATION  ==-)
+// langsung fungction
 
 function hitung_PxL1(panjang, lebar) {
   return panjang * lebar;
